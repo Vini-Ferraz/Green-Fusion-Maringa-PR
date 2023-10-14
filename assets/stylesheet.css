@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-tamanho-logo: 25px;
+    --fonte-tamanho-menu-telas-g: 25px;
+    --fonte-tamanho-menu-telas-m: 18px;
+    --fonte-tamanho-titulo-um-telas-g-m: 50px;
+    --fonte-tamanho-titulo-um-telas-p: 40px;
+    --fonte-tamanho-titulo-dois-telas-g-m: 25px;
+    --fonte-tamanho-titulo-dois-telas-p: 20px;
+    --fonte-tamanho-titulo-tres-telas-g-m: 30px;
+    --fonte-tamanho-titulo-tres-telas-p: 25px;
+    --fonte-tamanho-paragrafo-um-telas-g-m: 25px;
+    --fonte-tamanho-paragrafo-um-telas-p: 20px;
+    --fonte-tamanho-paragrafo-dois-telas-g-m: 20px;
+    --fonte-tamanho-paragrafo-dois-telas-p: 16px;
+    --cor-verde-um: #016740;
+    --cor-verde-dois: #16B978;
+    --cor-amarela: #FFDC23;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+

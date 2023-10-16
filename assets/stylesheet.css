@@ -22,7 +22,6 @@
     --cor-amarela: #FFDC23;
     --cor-azul: #071A51;
     --cor-branca: #FFFFFF;
-
 }
 
 /*Regras CSS que compartilham o mesmo comportamento em todos tamanho de tela*/
@@ -48,10 +47,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--fonte-principal);
+    transition: 350ms ease-in;
 }
-.fdp{
-    display: none;
-}
+
 
 /*Menu*/
 
@@ -61,12 +59,25 @@
 }
 
 /*Hero Row*/
-#button-hero-how{
+#button-hero-row{
     background-color: var(--cor-verde-um);
     color: var(--cor-branca);
     border: none;
+    animation-name: shake;
+    animation: shake 1.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+    cursor: pointer;
 }
-
+#button-hero-row:hover{
+    background-color: var(--cor-amarela);
+    color: var(--cor-azul);
+}
+/*Produtos row*/
+.box-style-products{
+    background-image: url('../assets/circulo_verde.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 @media (max-width: 700px) {
     /*Regras que são aplicadas em mais de um elemeto*/
     .padding-30{
@@ -116,21 +127,19 @@
         object-fit: cover;
     }
     .logo-text{
-        font-size: 25px;
+       font-size: var(--fonte-tamanho-logo);
     }
     #nav-menu{
         display: none;
     }
     /*Regras da hero row*/
-    #button-hero-how{
+    #button-hero-row{
         width: 100%;
         padding: 10px;
         border-radius: 10px;
-        animation-name: shake;
-        animation: shake 0.7s ease-in-out infinite;
-        animation-delay: 0.5s;
     }
     #img-hero-row{
         max-width: 100%;
     }
+    /*Regras produtos row*/
 }

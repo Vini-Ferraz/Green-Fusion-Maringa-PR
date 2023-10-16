@@ -1,3 +1,5 @@
+/*Configurações básicas*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root{
@@ -15,16 +17,120 @@
     --fonte-tamanho-paragrafo-um-telas-p: 20px;
     --fonte-tamanho-paragrafo-dois-telas-g-m: 20px;
     --fonte-tamanho-paragrafo-dois-telas-p: 16px;
-    --cor-verde-um: #016740;
-    --cor-verde-dois: #16B978;
+    --cor-verde-um: #16B978;
+    --cor-verde-dois: #016740;
     --cor-amarela: #FFDC23;
+    --cor-azul: #071A51;
+    --cor-branca: #FFFFFF;
 
 }
 
+/*Regras CSS que compartilham o mesmo comportamento em todos tamanho de tela*/
+@keyframes shake {
+    0%{
+        transform:translateX(0px);
+    }
+    25%{
+        transform:translateX(5px);
+    }
+    50%{
+        transform:translateX(0px);
+    }
+    75%{
+        transform:translateX(-5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: var(--fonte-principal);
 }
+.fdp{
+    display: none;
+}
 
+/*Menu*/
+
+.logo-text{
+    color: var(--cor-verde-dois);
+    text-transform: capitalize;
+}
+
+/*Hero Row*/
+#button-hero-how{
+    background-color: var(--cor-verde-um);
+    color: var(--cor-branca);
+    border: none;
+}
+
+@media (max-width: 700px) {
+    /*Regras que são aplicadas em mais de um elemeto*/
+    .padding-30{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .padding-bottom-30{
+        padding-bottom: 30px;
+    }
+    .blue{
+        color: var(--cor-azul);
+    }
+    .big-text{
+        font-size: var(--fonte-tamanho-titulo-um-telas-p);
+        font-weight: 700;
+    }
+    .button-subtititles-text{
+        font-size: var(--fonte-tamanho-paragrafo-dois-telas-g-m);
+        font-weight: 600;
+    }
+    .medium-text{
+        font-size: 20px;
+    }
+    .small-text{
+        font-style: var(--fonte-tamanho-paragrafo-dois-telas-p);
+    }
+    .lateral-space{
+        margin: 0 3%;
+    }
+    .italic{
+        font-style: italic;
+    }
+    .center{
+        text-align: center;
+    }
+    /*Regras do menu*/
+    .logo-flex-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor-amarela);
+        padding: 5px;
+    }
+    .logo-img{
+        height: 46px;
+        width: 55px;
+        object-fit: cover;
+    }
+    .logo-text{
+        font-size: 25px;
+    }
+    #nav-menu{
+        display: none;
+    }
+    /*Regras da hero row*/
+    #button-hero-how{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        animation-name: shake;
+        animation: shake 0.7s ease-in-out infinite;
+        animation-delay: 0.5s;
+    }
+    #img-hero-row{
+        max-width: 100%;
+    }
+}

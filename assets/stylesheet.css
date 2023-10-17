@@ -58,6 +58,7 @@
 .logo-text{
     color: var(--cor-verde-dois);
     text-transform: capitalize;
+    font-weight: 700;
 }
 
 /*Hero Row*/
@@ -88,6 +89,10 @@
     }
     .padding-bottom-30{
         padding-bottom: 30px;
+    }
+    .margin-30{
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .margin-bottom-30{
         margin-bottom: 30px;
@@ -167,5 +172,27 @@
     /*Regras CSS nossa história*/
     #nossa_história_texto{
         line-height: 30px;
+    }
+    #foto_casal_fazendeiros{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    /*Regras CSS visite-nos*/
+    .titulo_visite_nos{
+        display: block;
+        font-weight: 700;
+    }
+    .icone_verde{
+        color: var(--cor-verde-um);
+        width: 40px;
+        height: 40px; 
+    }
+    /*Regras CSS footer*/
+    #footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--cor-amarela);
     }
 }

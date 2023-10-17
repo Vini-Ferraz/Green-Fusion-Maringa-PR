@@ -15,13 +15,14 @@
     --fonte-tamanho-titulo-tres-telas-p: 25px;
     --fonte-tamanho-paragrafo-um-telas-g-m: 25px;
     --fonte-tamanho-paragrafo-um-telas-p: 20px;
-    --fonte-tamanho-paragrafo-dois-telas-g-m: 20px;
+    --fonte-tamanho-paragrafo-dois-telas-g-m: 25px;
     --fonte-tamanho-paragrafo-dois-telas-p: 16px;
     --cor-verde-um: #16B978;
     --cor-verde-dois: #016740;
     --cor-amarela: #FFDC23;
     --cor-azul: #071A51;
     --cor-branca: #FFFFFF;
+    --cor-preta: #101010;
 }
 
 /*Regras CSS que compartilham o mesmo comportamento em todos tamanho de tela*/
@@ -47,7 +48,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--fonte-principal);
-    transition: 350ms ease-in;
 }
 .fdp{
     display: none;
@@ -109,7 +109,7 @@
         font-weight: 600;
     }
     .medium-text{
-        font-size: var(--fonte-tamanho-paragrafo-dois-telas-g-m);
+        font-size: var(--fonte-tamanho-paragrafo-um-telas-p);
     }
     .small-text{
         font-size: var(--fonte-tamanho-paragrafo-dois-telas-p);
@@ -141,6 +141,145 @@
     }
     #nav-menu{
         display: none;
+    }
+    /*Regras da hero row*/
+    #button-hero-row{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #img-hero-row{
+        max-width: 100%;
+    }
+    /*Regras produtos row*/
+    #produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-style-products{
+        width: 340px;
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .caixa-texto{
+        padding: 0 15%;
+    }
+    /*Regras CSS nossa história*/
+    #nossa_história_texto{
+        line-height: 30px;
+    }
+    #foto_casal_fazendeiros{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    /*Regras CSS visite-nos*/
+    .titulo_visite_nos{
+        display: block;
+        font-weight: 700;
+    }
+    .icone_verde{
+        color: var(--cor-verde-um);
+        width: 40px;
+        height: 40px; 
+    }
+    /*Regras CSS footer*/
+    #footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--cor-amarela);
+    }
+}
+@media (min-width: 701px) {
+    /*Regras que são aplicadas em mais de um elemeto*/
+    .padding-30{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .padding-top-30{
+        padding-top: 30px;
+    }
+    .padding-bottom-30{
+        padding-bottom: 10px;
+    }
+    .margin-30{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .margin-bottom-30{
+        margin-bottom: 30px;
+    }
+    .blue{
+        color: var(--cor-azul);
+    }
+    .big-text{
+        font-size: var(--fonte-tamanho-titulo-um-telas-g-m);
+        font-weight: 700;
+    }
+    .button-subtititles-text{
+        font-size: var(--fonte-tamanho-titulo-tres-telas-g-m);
+        font-weight: 600;
+    }
+    .medium-text{
+        font-size: var(--fonte-tamanho-paragrafo-dois-telas-g-m);
+    }
+    .small-text{
+        font-size: var(--fonte-tamanho-paragrafo-dois-telas-g-m);
+    }
+    .lateral-space{
+        margin: 0 7%;
+    }
+    .italic{
+        font-style: italic;
+    }
+    .center{
+        text-align: center;
+    }
+    /*Regras do menu*/
+    #nav-flex-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 7%;
+    }
+    .logo-flex-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .logo-img{
+        display: none;
+    }
+    .logo-text{
+       font-size: var(--fonte-tamanho-logo);
+       line-height: 25px;
+    }
+    #nav-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    .list-itens{
+        text-decoration: none;
+        list-style: none;
+        color: var(--cor-preta);
+        font-size: var(--fonte-tamanho-menu-telas-m);
+        font-weight: 500;
+    }
+    .list-itens:hover{
+        border-bottom: 5px solid var(--cor-amarela);
+
+    }
+    .break-point{
+        display: block;
     }
     /*Regras da hero row*/
     #button-hero-row{

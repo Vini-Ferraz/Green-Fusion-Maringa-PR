@@ -48,6 +48,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--fonte-principal);
+    scroll-behavior: smooth;
 }
 .blue{
         color: var(--cor-azul);
@@ -58,9 +59,17 @@
 .center{
     text-align: center;
 }
-.fdp{
-    display: none;
+.logo-img{
+    height: 46px;
+    width: 55px;
+    object-fit: cover;
 }
+.logo-img-footer{
+    height: 46px;
+    width: 55px;
+    object-fit: cover;
+}
+
 
 /*Menu*/
 
@@ -130,16 +139,6 @@
         justify-content: center;
         background-color: var(--cor-amarela);
         padding: 5px;
-    }
-    .logo-img{
-        height: 46px;
-        width: 55px;
-        object-fit: cover;
-    }
-    .logo-img-footer{
-        height: 46px;
-        width: 55px;
-        object-fit: cover;
     }
     .logo-text{
        font-size: var(--fonte-tamanho-logo);
@@ -211,7 +210,7 @@
         padding-top: 30px;
     }
     .padding-bottom-30{
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     .margin-30{
         margin-top: 30px;
@@ -346,5 +345,52 @@
         align-items: center;
         justify-content: space-evenly;
         background-color: var(--cor-amarela);
+    }
+}
+@media (min-width: 1000px) {
+    /*Regras que são aplicadas em mais de um elemeto*/
+    .margin-30{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .text-block{
+        width: 60%;
+        text-align: start;
+    }
+    .caixa-flex-g{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /*Regras do menu*/
+    .logo-img{
+        display: inline-block;
+    }
+    #nav-menu{
+        width: 60%;
+    }
+    /*Regras da hero row*/
+    #green-background{
+        background: linear-gradient(135deg, rgba(217, 217, 217, 0.00) 65.46%, var(--cor-verde-um) 65.58%);
+   }
+   #button-hero-row{
+        width: 50%;
+   }
+   /*Regras produtos row*/
+   #caixa-flex-produtos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100vw;
+   }
+   .box-style-products{
+        width: 400px;
+        height: 400px;
+    }
+    #visite_nos{
+        margin: 0 7%;
     }
 }

@@ -49,6 +49,15 @@
     box-sizing: border-box;
     font-family: var(--fonte-principal);
 }
+.blue{
+        color: var(--cor-azul);
+    }
+.italic{
+    font-style: italic;
+}
+.center{
+    text-align: center;
+}
 .fdp{
     display: none;
 }
@@ -97,9 +106,6 @@
     .margin-bottom-30{
         margin-bottom: 30px;
     }
-    .blue{
-        color: var(--cor-azul);
-    }
     .big-text{
         font-size: var(--fonte-tamanho-titulo-um-telas-p);
         font-weight: 700;
@@ -117,12 +123,6 @@
     .lateral-space{
         margin: 0 5%;
     }
-    .italic{
-        font-style: italic;
-    }
-    .center{
-        text-align: center;
-    }
     /*Regras do menu*/
     .logo-flex-box{
         display: flex;
@@ -132,6 +132,11 @@
         padding: 5px;
     }
     .logo-img{
+        height: 46px;
+        width: 55px;
+        object-fit: cover;
+    }
+    .logo-img-footer{
         height: 46px;
         width: 55px;
         object-fit: cover;
@@ -206,7 +211,7 @@
         padding-top: 30px;
     }
     .padding-bottom-30{
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     .margin-30{
         margin-top: 30px;
@@ -214,9 +219,6 @@
     }
     .margin-bottom-30{
         margin-bottom: 30px;
-    }
-    .blue{
-        color: var(--cor-azul);
     }
     .big-text{
         font-size: var(--fonte-tamanho-titulo-um-telas-g-m);
@@ -230,16 +232,10 @@
         font-size: var(--fonte-tamanho-paragrafo-dois-telas-g-m);
     }
     .small-text{
-        font-size: var(--fonte-tamanho-paragrafo-dois-telas-g-m);
+        font-size: var(--fonte-tamanho-paragrafo-um-telas-p);
     }
     .lateral-space{
         margin: 0 7%;
-    }
-    .italic{
-        font-style: italic;
-    }
-    .center{
-        text-align: center;
     }
     /*Regras do menu*/
     #nav-flex-box{
@@ -256,6 +252,11 @@
     }
     .logo-img{
         display: none;
+    }
+    .logo-img-footer{
+        height: 46px;
+        width: 55px;
+        object-fit: cover;
     }
     .logo-text{
        font-size: var(--fonte-tamanho-logo);
@@ -285,10 +286,18 @@
     #button-hero-row{
         width: 100%;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 15px;
     }
     #img-hero-row{
         max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     /*Regras produtos row*/
     #produtos{
@@ -298,23 +307,27 @@
         justify-content: center;
     }
     .box-style-products{
-        width: 340px;
-        height: 340px;
+        width: 450px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .caixa-texto{
-        padding: 0 15%;
+        padding: 0 10%;
     }
     /*Regras CSS nossa história*/
+    #nossa_história{
+        text-align: center;
+    }
     #nossa_história_texto{
         line-height: 30px;
     }
     #foto_casal_fazendeiros{
         max-width: 100%;
-        border-radius: 10px;
+        height: 385px;
+        border-radius: 500px;
     }
     /*Regras CSS visite-nos*/
     .titulo_visite_nos{

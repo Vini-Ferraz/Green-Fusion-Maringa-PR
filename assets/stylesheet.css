@@ -43,6 +43,15 @@
         transform: translateX(0px);
     }
 }
+@keyframes caixa-aviso {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
 *{
     padding: 0;
     margin: 0;
@@ -78,6 +87,20 @@
     text-transform: capitalize;
     font-weight: 700;
 }
+#aviso{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 75vw;
+    width: 75vw;
+    padding: 5vw;
+    background-color: red;
+    border-radius: 1vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    opacity: 0%;
+    animation-name: caixa-aviso;
+    animation-duration: 7s;
+}
 
 /*Hero Row*/
 #button-hero-row{
@@ -100,19 +123,24 @@
     background-repeat: no-repeat;
 }
 @media (max-width: 700px) {
+    #aviso{
+        left: 50%;
+        top: 40%;
+        font-size: 5vw;
+    }
     /*Regras que são aplicadas em mais de um elemeto*/
-    .padding-30{
+    .padding {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .padding-bottom-30{
+    .padding-bottom {
         padding-bottom: 30px;
     }
-    .margin-30{
+    .margin {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .margin-bottom-30{
+    .margin-bottom {
         margin-bottom: 30px;
     }
     .big-text{
@@ -201,22 +229,29 @@
     }
 }
 @media (min-width: 701px) {
+    #aviso{
+        left: 50%;
+        top: 50%;
+        height: 50vw;
+        width: 50vw;
+        font-size: 3vw;
+    }
     /*Regras que são aplicadas em mais de um elemeto*/
-    .padding-30{
+    .padding {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .padding-top-30{
+    .padding-top {
         padding-top: 30px;
     }
-    .padding-bottom-30{
+    .padding-bottom {
         padding-bottom: 30px;
     }
-    .margin-30{
+    .margin {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .margin-bottom-30{
+    .margin-bottom {
         margin-bottom: 30px;
     }
     .big-text{
@@ -348,8 +383,15 @@
     }
 }
 @media (min-width: 1000px) {
+    #aviso{
+        left: 50%;
+        top: 50%;
+        height: 30vw;
+        width: 30vw;
+        font-size: 1.7vw;
+    }
     /*Regras que são aplicadas em mais de um elemeto*/
-    .margin-30{
+    .margin {
         padding-top: 60px;
         padding-bottom: 60px;
     }
